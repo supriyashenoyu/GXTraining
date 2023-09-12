@@ -1,0 +1,23 @@
+.btn{
+    color:blue;
+}
+body{
+    text-align:center ;
+    height: 15rem;
+    width: 50rem;
+    margin-left: 15rem;
+    border:1px solid black;
+}
+.pa{
+    position: relative;
+    margin-left:-13rem;
+}
+h1{
+    position: relative;
+    height: 2rem;
+    width: 20rem;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin-left:15rem;
+}

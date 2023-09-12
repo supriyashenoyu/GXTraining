@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Muti</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<style>
+    span{
+        display: flex ;
+       
+    }
+    #n1{
+        margin-bottom:5px;
+    }
+    p{
+        margin-right: 2rem;
+        margin-left: 4rem;
+    }
+    button{
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    body{
+    text-align:center ;
+    width: 50rem;
+    height: 50rem;
+    margin-left: 15rem;
+    border:1px solid black;
+}
+   </style>
+    <script>
+        function table(){
+        let num=document.getElementById("n1").value;
+        let range=document.getElementById("n2").value;
+        for(var i=1;i<=range;i++){
+            let out=num*i;
+            document.getElementById("ans").innerHTML+=num+'*'+i+'='+out+'<br>';
+        }
+        }
+    </script>
+</head>
+<body>
+    <h1>Multiplication</h1>
+    <span><p>Number</p><input id="n1" type="number"></span>
+    <span><p>Range</p><input id="n2" type="number"></span>
+    <button type="submit" onclick="table()">Calculate</button>
+    <div id="ans"></div>
+</body>
+</html>

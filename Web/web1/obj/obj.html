@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    crossorigin="anonymous">
+   
+</head>
+<body class="">
+    <div class="container">
+        <div class="float-start">
+            <h4>name</h4>
+            <p id="user-name">some name</p>
+            <p id="mail">software engineer</p>
+            <p id="location">software engineer</p>
+        </div>
+        <div class="float-end">
+            <p id="skills">software engineer</p>
+            <div id="pr"></div>
+        </div>
+        
+    </div>
+   
+   
+</body>
+<script> 
+fetch('data.json')
+            .then(response => response.json())
+            .then(serverData => {
+              var data=serverData;
+              document.getElementById("user-name").innerHTML=data.name;
+              document.getElementById("mail").innerHTML=data.email;
+              document.getElementById("location").innerHTML=data.location;
+              var sk=data.skills;
+              var sl=''
+              for(var i=0;i<sk.length;i++){
+                sl+=data.skills[i];
+                sl+='<br>'
+              }
+              document.getElementById("skills").innerHTML=sl;
+              var list=data.projects;
+              var proj='';
+              for(var i=0;i<list.length;i++){
+                proj+='<p>';
+                proj+=data.projects[i].title;
+                proj+='</p>';
+                proj+=data.projects[i].description;
+                proj+='</p>';
+                proj+=data.projects[i].year;
+                proj+='</p>';
+                
+              }
+              document.getElementById("pr").innerHTML=proj;
+
+            });
+</script>
+</html>

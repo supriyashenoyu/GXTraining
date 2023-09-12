@@ -1,0 +1,19 @@
+{
+    "name": "Supriya Shenoy U",
+    "email": "sudyavara@galaxe.com",
+    "location": "Karnataka, Udupi",
+    "about": "I'm a web developer passionate about creating web applications.",
+    "skills": ["HTML/CSS", "JavaScript", "React", "Node.js"],
+    "projects": [
+        {
+            "title": "Portfolio Website",
+            "description": "Designed and built a personal portfolio website.",
+            "year": 2021
+        },
+        {
+            "title": "E-commerce App",
+            "description": "Developed an e-commerce web application using React.",
+            "year": 2020
+        }
+    ]
+  }

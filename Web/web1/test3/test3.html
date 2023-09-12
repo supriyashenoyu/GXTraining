@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>pass</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body{
+            display:flex;
+        }
+    </style>
+    <script>
+        function shw(){
+            if(document.getElementById("pass").type == 'password' ){
+            document.getElementById("pass").type="text";
+
+        }
+        else{
+            document.getElementById("pass").type="password";
+
+        }
+    }
+
+    </script>
+</head>
+<body>
+    <input id="pass" type="password" placeholder="Enter Password">
+    <button type="submit" onclick="shw()" >Show</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function check(){
+            let num=document.getElementById("ter").value;
+            num%2==0?document.getElementById("res").innerText="even":document.getElementById("res").innerText="odd";
+        }
+        function nl(){
+            num=document.getElementById("res").value.innerText=" ";
+        }
+
+    </script>
+</head>
+<body>
+    <input id="ter" oninput="check()" onchange="nl()" type="number">
+    <button id="oe" oninput="check()">check</button>
+    <p id="res"></p>
+    
+</body>
+</html>

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    background-color:pink;
+}
+header{
+    background-color: white;
+    padding: 5px 15px;
+    border-bottom: 1px solid black;
+
+}
+.header_flex{
+    display:flex;
+
+}
+.flex_item{
+    flex:1 1 auto;
+}
+.flex_item_logo{
+    margin-left: -9px;
+    border-radius: 50%;
+}
+.top_menu ul{
+    list-style-type: none;
+}
+.top_menu ul li{
+    float:right;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 17px 10px;
+    cursor:pointer;
+}
+.top_menu ul li:hover{
+    color:blue;
+}
+.pic{
+    width:250px;
+   
+    text-align: center;
+   
+    
+}
+.show{
+    overflow-x: auto;
+}
+.pic:hover{
+    width:250px;
+    text-align: center;
+    color:red;
+   
+    
+}
+.pic img:hover{
+    width:260px;
+    border:3px solid red;
+
+}
+h6{
+    padding:5px;
+}
+.side_menu{
+    position:absolute;
+    background:white;
+    left: 0px; 
+   
+    /* width:100px; */
+}
+side_menu ul{  
+      list-style-type: none; 
+      position:center;
+} 
+.side_menu ul li a{
+    font-size: 20px;
+    padding: 25px;
+    display:inline-block;
+    width: 35px;
+    position:relative;
+    text-align:center;
+    border-top: 1px solid rgb(222, 213, 213);
+    color:rgb(238, 16, 16);
+
+}
+/* .side_menu ul li a:hover .fa{
+    margin-left: -20px;
+    font-size:30px;
+    padding:28px; 
+    background: red;
+    color:white;
+   
+}  */
+.side_menu ul li a:hover .fa{
+    margin-left: -20px;
+    display: inline-block;
+    text-align: center;
+    font-size:28px;
+    padding:28px; 
+    background: red;
+    color:white;
+   
+}
+table{
+    width:100%;
+
+}
+table td{
+    padding: 15px;
+
+}
+.side_menu ul li a span{
+    position:absolute;
+    left:70px;
+    top:0px;
+    color:red;
+    background-color: white;
+    padding:10px;
+    font-size: 15px;
+    display:none;
+    /* visibility:hidden; */
+    line-height:5px;
+}
+.side_menu ul li a:hover span{
+    display:block;
+    /* visibility:visible; */
+}
+
+main{
+    display:absolute;
+    margin-left: 30px;
+    padding-left:64px;
+    padding-top: 15px;
+}
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: whitesmoke;
+    text-align: center;
+    border-top: 1px solid black;
+}
+.user_name{
+
+    font-size: 0 !important;
+    background:white;
+    color: black;
+    text-align:center;
+    margin-top: 5px;
+    border:1px solid red;
+    width:22px;
+    border-radius: 50%;
+}
+.user_name::first-letter{
+    font-size: 20px;
+    text-align: center;
+
+}
+.fa{
+    color:red;
+}
+/* .fa:hover{
+    color:white;
+    font-size: 40px;
+} */
