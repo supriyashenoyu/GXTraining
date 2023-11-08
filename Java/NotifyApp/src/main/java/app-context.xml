@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="messageSender" class="com.atel.impl.MessageSenderImpl"
+		scope="singleton" init-method="init" destroy-method="destroy">
+		<property name="channel" ref="smsChannel" />
+		<constructor-arg ref="emailChannel" />
+	</bean>
+	<bean id="parentCar" abstract="true">
+		<property name="engineModel" value="Lithum" />
+		<property name="fuelType" value="Electric" />
+	</bean>
+	<!--bean id="Nexon EV" class="com.atel.impl.Car" parent="parentCar">
+		<property name="model" value="Nexon EV" />
+	</bean-->
+	<bean id="Altroz" class="com.atel.impl.Car" parent="parentCar">
+		<property name="model" value="Altroz" />
+	</bean>
+	<bean id="smsChannel" class="com.atel.impl.SMSChannel" />
+	<bean id="emailChannel" class="com.atel.impl.EmailChannel" />
+</beans>
